@@ -1,0 +1,40 @@
+.container{
+    width: 720px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+blockquote {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+    &::before,
+    &::after {
+        display: inline-block;
+        position: absolute;
+        font-family: "iconfont" !important;
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+        background: #fff;
+        text-align: center;
+        color: $gray;
+    }
+    &::before {
+        content: '\e60f';
+        background: #fff;
+        top: -15px;
+        left: -10px;
+    }
+    &::after {
+        content: '\e60e';
+        bottom: -15px;
+        right: -10px;
+    }
+}
